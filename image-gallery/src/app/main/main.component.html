@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html>
+<body>
+	<div *ngIf="imagedata">
+		<img src="{{imagedata.path}}" width="400" height="500" alt="Trulli">
+		<button (click)="previousimg()">Previous</button>
+		<button (click)="nextimg()">Next</button>
+		<a href="{{imagedata.path}}" target="_blank" download="filename">
+	  		Download
+		</a>
+	</div>
+	<div>Index: {{imgsrcindx}}</div>
+	<div>Path: {{imgsrc}}</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<app-main [imagedata]="imgdata"></app-main>
+	<span *ngFor="let img of imgsrcs">
+		<img src="{{img.path}}" alt="Trulli" height="40" width="40" (click)="selectedImage(img)"><span>||</span>
+	</span> 
+
